@@ -190,3 +190,4 @@ nbdist/
 .gradle/
 ./date*
 build/
+logs/
