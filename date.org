@@ -1,0 +1,31 @@
+* Vert.x Learning (Coding Practice)
+
+** Core Components Implemented
+
+*** Verticle Architecture
+- Hierarchical verticle deployment system
+- CustomVerticle base class with logging capabilities
+- Parent-child verticle relationships established
+- `/src/main/java/learningVertX/Verticles/`
+
+*** Event Bus Communication
+- Point-to-point messaging with sender/receiver pattern
+- Request-reply communication model
+- Message counting and shutdown logic
+- `./src/main/java/learningVertX/eventBusCommunication/`
+
+*** Advanced Features
+
+**** WorkerPool
+- Worker pool for blocking operations
+- `./src/main/java/learningVertX/workerPool/`
+
+**** EventLoop
+- Event loop blocking demonstrations
+- `./src/main/java/learningVertX/eventLoop/`
+
+
+**** Communication
+- Execute blocking with error handling
+- `./src/main/java/learningVertX/eventBusCommunication/`
+

@@ -7,8 +7,6 @@ public class MainVerticle extends AbstractVerticle
 {
   public static void main(String[] args)
   {
-    System.out.println("MainVerticle.main()");
-
     var vertx = Vertx.vertx();
 
     vertx.deployVerticle(new MainVerticle());
@@ -18,5 +16,9 @@ public class MainVerticle extends AbstractVerticle
   public void start() throws Exception
   {
     System.out.println("MainVerticle.start()");
+
+
+    vertx.deployVerticle(new childA());
+    vertx.deployVerticle(new childB());
   }
 }

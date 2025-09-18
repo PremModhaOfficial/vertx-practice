@@ -5,6 +5,7 @@ plugins {
   java
   application
   id("com.github.johnrengelman.shadow") version "7.1.2"
+    // id("io.freefair.lombok") version "8.6" // Lombok plugin
 }
 
 group = "com.practice"
@@ -32,6 +33,7 @@ dependencies {
   implementation("io.vertx:vertx-core")
   testImplementation("io.vertx:vertx-junit5")
   testImplementation("org.junit.jupiter:junit-jupiter:$junitJupiterVersion")
+
 }
 
 java {
