@@ -1,0 +1,28 @@
+* Part 1: The Vert.x Event Bus
+
+** 1. The Event Bus
+   - Introduction to the Event Bus as the core messaging system in Vert.x
+   - Understanding key concepts: addresses, handlers, and asynchronous message passing.
+
+** 2. Event Bus Communication Patterns
+   - *Request-Response Messaging*: For dialogues and replies between verticles.
+   - *Point-to-Point Messaging*: Sending a message to a single, specific handler.
+   - *Publish-Subscribe Messaging*: Broadcasting messages to all registered handlers.
+
+* Part 2: Data Handling with JSON and Custom Codecs
+
+** 3. Working with JSON
+   - *The JSON Object*: Creating and manipulating key-value JSON data.
+   - *The JSON Array*: Creating and manipulating lists of JSON values.
+   - *Mapping Java Objects*: Converting between Java objects and =JsonObject=.
+   - *Using JSON on the Event Bus*: How JSON serves as the standard data format for interoperability between verticles.
+
+** 4. Advanced Message Handling
+   - Defining custom codecs to send arbitrary Java objects over the event bus.
+   - Implementing and registering a custom message codec.
+
+* Part 3: Asynchronous Operations with Futures and Promises
+
+** 5. Understanding Futures and Promises
+   - Introduction to futures for managing asynchronous results and promises for providing those results.
+   - Practical application an

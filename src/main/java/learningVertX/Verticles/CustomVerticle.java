@@ -6,20 +6,13 @@ import io.vertx.core.Promise;
 public class CustomVerticle extends AbstractVerticle
 {
 
+
   @Override
   public void start(Promise<Void> startPromise) throws Exception
   {
-    start();
-    startPromise.complete();
-  }
-
-  @Override
-  public void start() throws Exception
-  {
     System.out.println("[%s]-[%s]-[%s]".formatted(
         getClass(), Thread.currentThread().getName(), getClass().getCanonicalName()));
-
-
+    startPromise.complete();
   }
 
 }

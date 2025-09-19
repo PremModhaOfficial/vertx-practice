@@ -6,6 +6,7 @@ plugins {
   application
   id("com.github.johnrengelman.shadow") version "7.1.2"
     // id("io.freefair.lombok") version "8.6" // Lombok plugin
+     id("io.freefair.lombok") version "9.0.0-rc2"
 }
 
 group = "com.practice"
@@ -31,9 +32,18 @@ application {
 dependencies {
   implementation(platform("io.vertx:vertx-stack-depchain:$vertxVersion"))
   implementation("io.vertx:vertx-core")
+  implementation("com.fasterxml.jackson.core:jackson-databind:2.20.0")
+  implementation("com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.20.0")
   testImplementation("io.vertx:vertx-junit5")
   testImplementation("org.junit.jupiter:junit-jupiter:$junitJupiterVersion")
 
+	compileOnly("org.projectlombok:lombok:1.18.42")
+	annotationProcessor("org.projectlombok:lombok:1.18.42")
+
+	testCompileOnly("org.projectlombok:lombok:1.18.42")
+	testAnnotationProcessor("org.projectlombok:lombok:1.18.42")
+  // https://mvnrepository.com/artifact/org.slf4j/slf4j-api
+  implementation("org.slf4j:slf4j-api:1.7.25")
 }
 
 java {
