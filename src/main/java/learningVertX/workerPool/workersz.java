@@ -4,13 +4,17 @@ import java.util.Random;
 
 import io.vertx.core.AbstractVerticle;
 import io.vertx.core.Promise;
+import lombok.extern.slf4j.Slf4j;
 
+@Slf4j
 public class workersz extends AbstractVerticle
 {
 
   @Override
   public void start(Promise<Void> startPromise) throws Exception
   {
+    log.debug("started {}", getClass().getName());
+
 
     startPromise.complete();
     vertx.executeBlocking(event -> {

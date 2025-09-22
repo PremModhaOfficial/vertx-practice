@@ -5,7 +5,6 @@ plugins {
   java
   application
   id("com.github.johnrengelman.shadow") version "7.1.2"
-    // id("io.freefair.lombok") version "8.6" // Lombok plugin
      id("io.freefair.lombok") version "9.0.0-rc2"
 }
 
@@ -47,8 +46,8 @@ dependencies {
 }
 
 java {
-  sourceCompatibility = JavaVersion.VERSION_21
-  targetCompatibility = JavaVersion.VERSION_21
+  sourceCompatibility = JavaVersion.VERSION_24
+  targetCompatibility = JavaVersion.VERSION_24
 }
 
 tasks.withType<ShadowJar> {
